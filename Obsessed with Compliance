@@ -1,45 +1,39 @@
-```fortran
 ! PROGRAM: COMPLIANCE_IS_BAE
 ! AUTHOR: A Coding Nerd (Unironically Obsessed with Compliance)
 ! DATE: 2025-12-11
-! DESCRIPTION: A Fortran program to explain why compliance (security and privacy)
-!              is superior to 'elegant code' and why it's lowkey satisfying.
 
 PROGRAM Compliance_Is_Bae
   IMPLICIT NONE
-  
-  ! Define constants for clarity
+
   INTEGER, PARAMETER :: MAX_REASONS = 4
   CHARACTER(LEN=100) :: Reasons(MAX_REASONS)
-  
+  INTEGER :: i   ! <-- added missing variable declaration from first version
+
   ! --- Subroutine for printing the main message ---
   CALL Print_Intro()
-  
-  ! --- Main Logic: The Four Reasons Compliance Hits ---
-  
+
+  ! --- Main Logic Header ---
   WRITE(*, '(A)') " "
   WRITE(*, '(A)') "!====================================================!"
-  WRITE(*, '(A)') "!  WHY COMPLIANCE IS ACTUALLY CRACKED (DEADASS)  !"
+  WRITE(*, '(A)') "!  WHY COMPLIANCE IS ACTUALLY CRACKED (DEADASS)      !"
   WRITE(*, '(A)') "!====================================================!"
   WRITE(*, '(A)') " "
-  
+
+  ! Reasons
   Reasons(1) = "1. Compliance Understands That Everything Is Literally Burning"
   Reasons(2) = "2. It Makes You Actually Do The Stuff You Claim You Do (You Don't)"
   Reasons(3) = "3. Scaling Without Compliance Is Basically A No-Hit-Run With No Healing Items"
   Reasons(4) = "4. It Triggers Everyone's Main Character Syndrome"
 
-  ! Loop through and print reasons
+  ! Loop and print
   DO i = 1, MAX_REASONS
-     WRITE(*, '(A)') Reasons(i)
-     CALL Print_Spacer()
+    WRITE(*, '(A)') Reasons(i)
+    CALL Print_Spacer()
   END DO
-  
-  ! --- Conclusion ---
-  CALL Print_Conclusion()
-  
-CONTAINS
 
-  ! --- Subroutine Definitions ---
+  CALL Print_Conclusion()
+
+CONTAINS
 
   SUBROUTINE Print_Intro()
     WRITE(*, '(A)') "PROGRAM COMPLIANCE_NERD_MANIFESTO"
@@ -55,7 +49,7 @@ CONTAINS
     WRITE(*, '(A)') "C---"
     WRITE(*, '(A)') " "
   END SUBROUTINE Print_Spacer
-  
+
   SUBROUTINE Print_Conclusion()
     WRITE(*, '(A)') " "
     WRITE(*, '(A)') "!=========================================================="
@@ -71,9 +65,9 @@ CONTAINS
     WRITE(*, '(A)') "C 2. Safety rails when testing wild stuff."
     WRITE(*, '(A)') "C 3. Trust that we won't leak passwords to a Discord scammer."
     WRITE(*, '(A)') " "
-    WRITE(*, '(A)') "WRITE(*, '(/A/)') 'I admit it: I am weirdly into compliance.'"
-    WRITE(*, '(A)') "END PROGRAM Compliance_Is_Bae"
+
+    ! Corrected final message
+    WRITE(*, '(A)') "I admit it: I am weirdly into compliance."
   END SUBROUTINE Print_Conclusion
 
 END PROGRAM Compliance_Is_Bae
-```
