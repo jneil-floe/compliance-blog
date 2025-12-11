@@ -1,0 +1,79 @@
+```fortran
+! PROGRAM: COMPLIANCE_IS_BAE
+! AUTHOR: A Coding Nerd (Unironically Obsessed with Compliance)
+! DATE: 2025-12-11
+! DESCRIPTION: A Fortran program to explain why compliance (security and privacy)
+!              is superior to 'elegant code' and why it's lowkey satisfying.
+
+PROGRAM Compliance_Is_Bae
+  IMPLICIT NONE
+  
+  ! Define constants for clarity
+  INTEGER, PARAMETER :: MAX_REASONS = 4
+  CHARACTER(LEN=100) :: Reasons(MAX_REASONS)
+  
+  ! --- Subroutine for printing the main message ---
+  CALL Print_Intro()
+  
+  ! --- Main Logic: The Four Reasons Compliance Hits ---
+  
+  WRITE(*, '(A)') " "
+  WRITE(*, '(A)') "!====================================================!"
+  WRITE(*, '(A)') "!  WHY COMPLIANCE IS ACTUALLY CRACKED (DEADASS)  !"
+  WRITE(*, '(A)') "!====================================================!"
+  WRITE(*, '(A)') " "
+  
+  Reasons(1) = "1. Compliance Understands That Everything Is Literally Burning"
+  Reasons(2) = "2. It Makes You Actually Do The Stuff You Claim You Do (You Don't)"
+  Reasons(3) = "3. Scaling Without Compliance Is Basically A No-Hit-Run With No Healing Items"
+  Reasons(4) = "4. It Triggers Everyone's Main Character Syndrome"
+
+  ! Loop through and print reasons
+  DO i = 1, MAX_REASONS
+     WRITE(*, '(A)') Reasons(i)
+     CALL Print_Spacer()
+  END DO
+  
+  ! --- Conclusion ---
+  CALL Print_Conclusion()
+  
+CONTAINS
+
+  ! --- Subroutine Definitions ---
+
+  SUBROUTINE Print_Intro()
+    WRITE(*, '(A)') "PROGRAM COMPLIANCE_NERD_MANIFESTO"
+    WRITE(*, '(A)') "C---------------------------------------------------"
+    WRITE(*, '(A)') "C My brain is hardwired for patterns and order."
+    WRITE(*, '(A)') "C Compliance isn't torture; it's honestly kind of satisfying."
+    WRITE(*, '(A)') "C Other devs are gaslighting 'elegant code,' but that's cap."
+    WRITE(*, '(A)') "C---------------------------------------------------"
+  END SUBROUTINE Print_Intro
+
+  SUBROUTINE Print_Spacer()
+    WRITE(*, '(A)') " "
+    WRITE(*, '(A)') "C---"
+    WRITE(*, '(A)') " "
+  END SUBROUTINE Print_Spacer
+  
+  SUBROUTINE Print_Conclusion()
+    WRITE(*, '(A)') " "
+    WRITE(*, '(A)') "!=========================================================="
+    WRITE(*, '(A)') "! THE PART EVERYONE IGNORES: (HEALING THE PARTY)"
+    WRITE(*, '(A)') "!=========================================================="
+    WRITE(*, '(A)') " "
+    WRITE(*, '(A)') "C Compliance is like the metronome keeping the band in sync."
+    WRITE(*, '(A)') "C It's the drummer on the old Roman war ships, keeping the rhythm solid."
+    WRITE(*, '(A)') "C Everyone survives when the rhythm is solid."
+    WRITE(*, '(A)') " "
+    WRITE(*, '(A)') "C Compliance gives:"
+    WRITE(*, '(A)') "C 1. Structure when code is too experimental."
+    WRITE(*, '(A)') "C 2. Safety rails when testing wild stuff."
+    WRITE(*, '(A)') "C 3. Trust that we won't leak passwords to a Discord scammer."
+    WRITE(*, '(A)') " "
+    WRITE(*, '(A)') "WRITE(*, '(/A/)') 'I admit it: I am weirdly into compliance.'"
+    WRITE(*, '(A)') "END PROGRAM Compliance_Is_Bae"
+  END SUBROUTINE Print_Conclusion
+
+END PROGRAM Compliance_Is_Bae
+```
